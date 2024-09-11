@@ -2,6 +2,7 @@ package surrealdb
 
 import (
 	"fmt"
+
 	"github.com/surrealdb/surrealdb.go/internal/connection"
 	"github.com/surrealdb/surrealdb.go/pkg/constants"
 	"github.com/surrealdb/surrealdb.go/pkg/model"
@@ -29,7 +30,7 @@ func New(url string, engine string) (*DB, error) {
 		Decoder: model.GetCborDecoder(),
 	}
 	var conn connection.Connection
-	if engine != "http" {
+	if engine == "http" {
 		conn = connection.NewHttp(newParams)
 	} else {
 		conn = connection.NewWebSocket(newParams)
