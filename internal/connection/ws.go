@@ -4,14 +4,15 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/surrealdb/surrealdb.go/internal/rand"
-	"github.com/surrealdb/surrealdb.go/pkg/logger"
 	"io"
 	"net"
 	"reflect"
 	"strconv"
 	"sync"
 	"time"
+
+	"github.com/surrealdb/surrealdb.go/internal/rand"
+	"github.com/surrealdb/surrealdb.go/pkg/logger"
 
 	gorilla "github.com/gorilla/websocket"
 )
@@ -52,7 +53,7 @@ func NewWebSocket(p NewConnectionParams) *WebSocket {
 			encode: p.Encoder,
 			decode: p.Decoder,
 		},
-		logger: p.Logger,
+		// logger: p.Logger,
 
 		Conn:                 nil,
 		closeChan:            make(chan int),
