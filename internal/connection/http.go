@@ -3,11 +3,12 @@ package connection
 import (
 	"bytes"
 	"fmt"
-	"github.com/surrealdb/surrealdb.go/internal/rand"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/TheRangiCrew/surrealdb.go/internal/rand"
 )
 
 type Http struct {

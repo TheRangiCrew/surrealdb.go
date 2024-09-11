@@ -2,7 +2,8 @@ package mock
 
 import (
 	"errors"
-	conn "github.com/surrealdb/surrealdb.go/internal/connection"
+
+	conn "github.com/TheRangiCrew/surrealdb.go/internal/connection"
 )
 
 type ws struct {

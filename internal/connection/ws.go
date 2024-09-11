@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/surrealdb/surrealdb.go/internal/rand"
-	"github.com/surrealdb/surrealdb.go/pkg/logger"
+	"github.com/TheRangiCrew/surrealdb.go/internal/rand"
+	"github.com/TheRangiCrew/surrealdb.go/pkg/logger"
 
 	gorilla "github.com/gorilla/websocket"
 )

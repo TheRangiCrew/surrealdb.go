@@ -4,8 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/surrealdb/surrealdb.go/pkg/constants"
-	"github.com/surrealdb/surrealdb.go/pkg/logger"
 	"io"
 	rawslog "log/slog"
 	"os"
@@ -13,12 +11,15 @@ import (
 	"testing"
 	"time"
 
+	"github.com/TheRangiCrew/surrealdb.go/pkg/constants"
+	"github.com/TheRangiCrew/surrealdb.go/pkg/logger"
+
+	"github.com/TheRangiCrew/surrealdb.go"
+	conn "github.com/TheRangiCrew/surrealdb.go/internal/connection"
+	"github.com/TheRangiCrew/surrealdb.go/pkg/marshal"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	"github.com/surrealdb/surrealdb.go"
-	conn "github.com/surrealdb/surrealdb.go/internal/connection"
-	"github.com/surrealdb/surrealdb.go/pkg/marshal"
 )
 
 // Default consts and vars for testing

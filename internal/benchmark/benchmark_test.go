@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/surrealdb/surrealdb.go"
-	"github.com/surrealdb/surrealdb.go/pkg/marshal"
+	"github.com/TheRangiCrew/surrealdb.go"
+	"github.com/TheRangiCrew/surrealdb.go/pkg/marshal"
 )
 
 // a simple user struct for testing

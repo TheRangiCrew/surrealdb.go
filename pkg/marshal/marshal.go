@@ -5,9 +5,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/surrealdb/surrealdb.go/internal/util"
-	"github.com/surrealdb/surrealdb.go/pkg/constants"
 	"reflect"
+
+	"github.com/TheRangiCrew/surrealdb.go/internal/util"
+	"github.com/TheRangiCrew/surrealdb.go/pkg/constants"
 )
 
 const StatusOK = "OK"

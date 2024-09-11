@@ -1,9 +1,10 @@
 package model
 
 import (
-	"github.com/fxamacker/cbor/v2"
-	"github.com/surrealdb/surrealdb.go/internal/connection"
 	"reflect"
+
+	"github.com/TheRangiCrew/surrealdb.go/internal/connection"
+	"github.com/fxamacker/cbor/v2"
 )
 
 type CustomCBORTag uint64
